@@ -29,6 +29,22 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        
+        .top-nav-collapse {
+            background-color: #24355C;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #24355C;
+            }
+        }
+        
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #24355C;
+            }
+        }
     </style>
 </head>
 
@@ -37,7 +53,8 @@
     <!--Main Navigation-->
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
 
             <div class="container">
 
@@ -53,37 +70,37 @@
                 <div class="collapse navbar-collapse" id="basicExampleNav">
 
                     <!-- Links -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#best-features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#examples">Examples</a>
                         </li>
-
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
                     </ul>
                     <!-- Links -->
 
-                    <form class="form-inline">
-                        <div class="md-form my-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-                    </form>
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- Collapsible content -->
 
@@ -390,7 +407,79 @@
             <!--Section: Contact-->
             <section id="contact">
 
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold text-center">Contact us</h2>
 
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-12">
+                        <!-- Form contact -->
+                        <form class="p-5 grey-text">
+                            <div class="md-form form-sm"> <i class="fa fa-user prefix"></i>
+                                <input type="text" id="form3" class="form-control form-control-sm">
+                                <label for="form3">Your name</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-envelope prefix"></i>
+                                <input type="text" id="form2" class="form-control form-control-sm">
+                                <label for="form2">Your email</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-tag prefix"></i>
+                                <input type="text" id="form32" class="form-control form-control-sm">
+                                <label for="form34">Subject</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-pencil prefix"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
+                                <label for="form8">Your message</label>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                            </div>
+                        </form>
+                        <!-- Form contact -->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-md-12">
+                        <!--Google map-->
+                        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
+
+                        <!--Grid row-->
+                        <div class="row text-center">
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 mb-3">
+
+                                <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>New York, NY 10012</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-3">
+
+                                <p><i class="fa fa-building fa-1x mr-2 grey-text"></i>Mon - Fri, 8:00-22:00</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-3">
+
+                                <p><i class="fa fa-phone fa-1x mr-2 grey-text"></i>+ 01 234 567 89</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
 
             </section>
             <!--Section: Contact-->
@@ -400,12 +489,54 @@
     <!--Main layout-->
 
 
-    <!-- Footer -->
-    <footer>
+    <!--Footer-->
+    <footer class="page-footer unique-color-dark">
 
+        <!-- Social buttons -->
+        <div class="primary-color">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
 
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fa fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fa fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Social buttons -->
+
+        <!--Footer Links-->
     </footer>
-    <!-- Footer -->
 
     <!-- /Start your project here-->
 
@@ -419,11 +550,39 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
 
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+
     <!-- Carousel options -->
     <script>
         $('.carousel').carousel({
             interval: 3000,
         })
+    </script>
+
+    <!-- Google Maps settings -->
+    <script>
+        // Regular map
+        function regular_map() {
+            var var_location = new google.maps.LatLng(40.725118, -73.997699);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "New York"
+            });
+        }
+
+        // Initialize maps
+        google.maps.event.addDomListener(window, 'load', regular_map);
     </script>
 </body>
 
