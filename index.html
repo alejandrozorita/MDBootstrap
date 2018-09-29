@@ -20,53 +20,57 @@
     <!--Main Navigation-->
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+        <nav class="navbar navbar-expand-lg navbar-dark indigo">
 
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- Additional container -->
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#">Navbar</a>
 
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
 
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
 
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                         </div>
-                    </li>
+                    </form>
+                </div>
+                <!-- Collapsible content -->
 
-                </ul>
-                <!-- Links -->
-
-                <form class="form-inline">
-                    <div class="md-form my-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                </form>
             </div>
-            <!-- Collapsible content -->
 
         </nav>
         <!--/.Navbar-->
@@ -74,7 +78,7 @@
     <!--Main Navigation-->
 
     <!--Main layout-->
-    <main>
+    <main class="mt-5">
         <!--Main container-->
         <div class="container">
 
@@ -82,7 +86,7 @@
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-7">
+                <div class="col-md-7 mb-4">
 
                     <!--Featured image -->
                     <div class="view overlay z-depth-1-half">
@@ -90,13 +94,11 @@
                         <div class="mask rgba-white-light"></div>
                     </div>
 
-                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="img-fluid" alt="">
-
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-md-5">
+                <div class="col-md-5 mb-4">
 
                     <h2>Some awesome heading</h2>
                     <hr>
@@ -133,7 +135,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#!" class="btn btn-primary">Button</a>
+                            <a href="#!" class="btn btn-indigo">Button</a>
                         </div>
 
                     </div>
@@ -162,7 +164,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn btn-indigo">Button</a>
                         </div>
 
                     </div>
@@ -191,7 +193,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn btn-indigo">Button</a>
                         </div>
 
                     </div>
@@ -207,10 +209,10 @@
 
     <!--Footer-->
     <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4 mt-4">
+    <footer class="page-footer font-small indigo pt-4 mt-4">
 
         <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+        <div class="container text-center text-md-left">
 
             <!-- Grid row -->
             <div class="row">
